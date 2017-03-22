@@ -93,7 +93,23 @@ article > p {
     <li>:active</li>
     <li>:nth-child(...)</li>
   </ul>
+</section>
 
+<section>
+	<h2>Style Placement</h2>
+	<h3>Inline Styling</h3>
+	<article>Just insere a "style" attribute to the element that you want to add style. e.g. &lt;p style="text-align: center;"&gt;
+	<br>However, this is the least used way of styling because of its unefficiency.
+	</article>
+	<h3>Link to a separate stylesheet</h3>
+	<article>
+		In most cases, we prefer to have a separate stylesheet, usually called "style.css" and link that sheet to our pages to ensure the consistency of every page.
+		<br>To do this, we add a "link" tag in the &lt;head&gt;, with an attribute "rel"="stylesheet" and a href attribute of its location. e.g. &lt;link rel="stylesheet" href="style.css"&gt;
+	</article>
+	<h3>Head Styles</h3>
+	<article>
+		In cases of head styles, they are usually used to override external stylesheet.
+	</article>
 </section>
 
 
