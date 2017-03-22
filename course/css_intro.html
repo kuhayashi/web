@@ -25,8 +25,7 @@ h2 {
 /* These above are element selectors */
 
 .blue {
-	color: blue;
-	font-size: 20px;
+		font-size: 20px;
 }
 
 /* This is a class selector "open with a dot". To use it, e.g. we should add a class attribute to different tags, no matter if it is a <p class="blue"> or a <div class="blue"> Both of them will be applied to this particular style. */
@@ -44,10 +43,15 @@ div, .blue {
 */
 /* Grouping the div and blue class, both of them will have blue color. */
 
-p.blue{
+div.blue{
 	font-style: italic;
 }
-/* this is a combining selector of element with class selector, which means every p that has class "blue" will be affected. */
+/* this is a combining selector of element with class selector, which means every p that has class "blue" will be affected. Just need to make sure there is no space between the 2 selectors.*/
+
+article > p {
+	color: purple;
+}
+/* this is a child selector, it reads: every p that is a DIRECT child of article will be affected. */;
 
 </style>
 
@@ -61,7 +65,10 @@ p.blue{
 <a href="http://www.csszengarden.com" target="_blank">CSS Zen Gardien</a> This is actually an interesting website shows you how exactly the same html code can be displayed differently thanks to CSS.
 <h2>Anatomy of a CSS rule</h2>
 <h2>Element, class, &amp; id Selectors</h2>
-<p class="blue">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text </p>
+<article>
+	<p class="blue">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text </p>
+</article>
+
 <div class="blue">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text	
 </div>
 <p id="name">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text </p>
