@@ -17,16 +17,30 @@ h2 {
 	color: orange;
 	font-size: 48px;
 }
-</style>
-<!-- These above are element selectors -->
+/* These above are element selectors */
 
-<style type="text/css">
 .blue {
 	color: blue;
 	font-size: 20px;
 }
+
+/* This is a class selector "open with a dot". To use it, e.g. we should add a class attribute to different tags, no matter if it is a <p class="blue"> or a <div class="blue"> Both of them will be applied to this particular style. */
+
+#name {
+	color: yellow;
+}
+/* This is an id selector.*/
+
+/*
+	
+div, .blue {
+	color: blue;
+}
+*/
+/* Grouping the div and blue class, both of them will have blue color. */
+
 </style>
-<!-- This is a class selector "open with a dot". To use it, e.g. we should add a class attribute to different tags, no matter if it is a <p class="blue"> or a <div class="blue"> Both of them will be applied to this particular style. -->
+
 
 
 </head>
@@ -38,9 +52,9 @@ h2 {
 <h2>Anatomy of a CSS rule</h2>
 <h2>Element, class, &amp; id Selectors</h2>
 <p class="blue">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text </p>
-<div class="blue">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text 
-	
+<div class="blue">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text	
 </div>
+<p id="name">this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text this is some sample text </p>
 
 
 
